@@ -1,0 +1,26 @@
+{
+  "name": "Evergreen-CAS",
+  "version": "1.0.0",
+  "description": "Central Authentication Service for The Evergreen State College",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://revoltpuppy@github.com/revoltpuppy/Evergreen-CAS"
+  },
+  "author": "Justin McDowell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/revoltpuppy/Evergreen-CAS/issues"
+  },
+  "homepage": "https://cas.evergreen.edu/cas/login",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "^1.0.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

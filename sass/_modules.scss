@@ -1,0 +1,224 @@
+#company-name{
+	// box model
+	margin-top: 0.25em;
+	// layout
+	overflow: hidden;
+	// typography
+	color: transparent;
+	line-height: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	
+	&::before{
+		// box model
+		padding: 0 .25em;
+		max-height: 4em;
+		// display
+		display: flex;
+		// misc
+		content: url(http://evergreen.edu/_inc/images/evergreen-long-tree-oly.svg);
+		
+		@media screen and (min-width: 32em){
+			width: 75%;
+		}
+		
+		@media screen and (min-width: 43em){
+			width: 50%;
+		}
+		
+		@media screen and (min-width: 70em){
+			width: 33%;
+		}
+		
+		@media screen and (min-width: 82em){
+			width: 25%;
+		}
+	}
+}
+
+#app-name{
+	//box model
+	border-top: 11px solid $evergreen-neue;
+	margin-top: 0;
+	margin-bottom: 0.9375rem; // 15/16
+	padding: 0 0.44991917523388em;  // 14px (base font-size) / 31.1167 (h1 font-size)
+	padding-top: 0.9375rem;  // 15/16
+	//typography
+	font-size: 1.719rem;  //27.506px  Step 3
+	line-height: 1.09067112629972;
+	
+	@media screen and (min-width: 22em){
+		font-size: 1.945rem;  //31.112px
+		line-height: 1.44638724607868;  //45/31.112
+	}
+	
+	@media screen and (min-width: 32em){
+		padding-right: 0.4637712789175em;  // 17px (base font-size) / 36.656 (h1 font-size)
+		padding-left: 0.4637712789175em;  // 17px (base font-size) / 36.656 (h1 font-size)
+		//typography
+		font-size: 2.291rem;  //36.656px
+		line-height: 1.227629855958097;  //45/36.656
+	}
+    
+	@media screen and (min-width: 43em){
+		//typography
+		font-size: 2.782rem;  //44.512px  Step 5
+		line-height: 1.010963335729691;  //45/44.5167
+	}
+	
+	@media screen and (min-width: 70em){
+		//typography
+		font-size: 3.146rem;  //50.336  Step 6
+		line-height: 1.19198982835346;  //60/50.336
+	}
+	
+	// Height-based media-queries
+	@media screen and (min-height: 35em){
+		border-top-width: 22px;
+		margin-bottom:  1.875rem; // 30/16
+		padding-top: 1.875rem;   // 30/16
+	}
+	
+	@media screen and (min-height: 40em){
+		border-top-width: 44px;
+	}
+}
+
+.fm-v{
+		//box model
+		margin: 0 auto;
+		max-width: 22em;
+		//layout
+		display: flex;
+		flex-direction: column;
+		
+		h2{
+			margin-top: 0.77990953049446em;  //15/19.233
+			
+			@media screen and (min-height: 35em){
+				//margin-top: 1.55981906098893em;
+			}
+		}
+}
+
+.fl-controls-left{
+	// box model
+	width: 100%;
+	// layout
+	display: flex;
+	flex-direction: row;
+	
+	label{
+		margin-right: .5em;
+	}
+	
+	input{
+		width: auto;
+		min-width: 66%;
+		flex-grow: 1;
+	}
+}
+
+.check,
+.btn-row{
+	margin: 0 auto;
+	width: 100%;
+}
+
+.check{
+	@include margin-default;
+}
+
+.errors,
+.success{
+	// box model
+	padding: 0.46875rem 1em;  // 7.5/16
+	// layout
+	overflow: hidden;
+	// typography
+}
+
+.errors{
+	// typography
+	color: $wine;
+	// backgrounds & borders
+	background-color: $highlight !important;
+	background-image: url("../images/texture-1.png");
+	
+	&::before{
+		// box model
+		border: 2px solid $wine;
+		margin-left: 1em;
+		margin-bottom: .5em;
+		width: 2em;
+		// layout
+		float: right;
+		// typography
+	  font-size: 1.202rem;  //19.232px  Step 2
+	  font-weight:bold;
+	  line-height: 1.55990016638935;  //30/19.232
+	  text-align: center;
+	  // backgrounds & borders
+	  border-radius: 50%;
+		// misc
+		content: "!";
+	}
+}
+
+.success{
+	//backgrounds & borders
+	border-radius: 2px;
+	background-color: transparentize(mix(white, $sky-blue, 80%), .05) !important;
+	background-image: url("../images/texture-1.png");
+}
+
+.sidebar-content{
+	
+	h2{
+	  font-size: 1.202rem;  //19.232px  Step 2
+	  line-height: 1.55990016638935;  //30/19.232
+	}
+}
+
+#list-languages{
+	
+	ul{
+		// box model
+		margin-left: 0;
+		padding-left: 0;
+		
+		@media screen and (min-width: 20em){
+			//typography
+			column-count: 3;
+			// list
+			list-style-type: none;
+		}
+		
+		@media screen and (min-width: 32em){
+			column-count: 4;
+		}
+		
+		@media screen and (min-width: 70em){
+			column-count: 3;
+		}
+	}
+}
+
+#footer a,
+#footer a:link,
+#footer a:visited{
+	border-color: mix(black, $evergreen-neue, 40%);
+	color: $evergreen-neue;
+}
+#footer a:hover{
+	border-color: $sky-blue;
+    color: $sky-blue;
+}
+
+#jasig{
+	display: none;
+}
+
+#copyright{
+	@include small-type;
+}

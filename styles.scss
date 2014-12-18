@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*!*
+ * View the source and fork these styles on Github:
+ *
+ * @see https://github.com/revoltpuppy/Evergreen-CAS
+ */
+/**
+ * Central Authentication System Styles
+ *
+ * Styles for Evergreen’s Central Authentication System (CAS).
+ *
+ * These styles were originally developed by Justin McDowell. They
+ * override the default CAS styles and create a mobile-friendly
+ * responsive site that matches Evergreen’s style guide.
+ *
+ * Styles in this file are organized according to the SMACSS
+ * principles: http://smacss.com/
+ *
+ * @project    The Evergreen State College
+ * @author     The Evergreen State College
+ * @copyright  2014 by the author
+ * @license    Copyrighted
+ */
+
+@import "tools";  // constants, mixins, functions, etc.
+
+@import "sass/base";
+@import "sass/layout";
+@import "sass/modules";
+/*@import "sass/states";*/
+
+/* This file was written by Justin McDowell. ((O)O) */
