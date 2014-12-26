@@ -1,38 +1,37 @@
 #company-name{
 	// box model
 	margin-top: 0.25em;
+	padding: 0 .25em;
 	// layout
 	overflow: hidden;
 	// typography
 	color: transparent;
 	line-height: 0;
-	text-indent: 100%;
 	white-space: nowrap;
+		
+	@media screen and (min-width: 32em){
+		width: 75%;
+	}
+	
+	@media screen and (min-width: 43em){
+		width: 50%;
+	}
+	
+	@media screen and (min-width: 70em){
+		width: 33%;
+	}
+	
+	@media screen and (min-width: 82em){
+		width: 25%;
+	}
 	
 	&::before{
 		// box model
-		padding: 0 .25em;
 		max-height: 4em;
 		// display
-		display: flex;
+		//display: flex;
 		// misc
-		content: url(http://evergreen.edu/_inc/images/evergreen-long-tree-oly.svg);
-		
-		@media screen and (min-width: 32em){
-			width: 75%;
-		}
-		
-		@media screen and (min-width: 43em){
-			width: 50%;
-		}
-		
-		@media screen and (min-width: 70em){
-			width: 33%;
-		}
-		
-		@media screen and (min-width: 82em){
-			width: 25%;
-		}
+		content: url(../images/evergreen-long-tree-oly.svg);
 	}
 }
 
