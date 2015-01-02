@@ -118,14 +118,18 @@
 	}
 }
 
-.check,
-.btn-row{
+.check,  // “Warn me” checkbox
+.btn-row{  // Row with “Submit” and “Clear” buttons
 	margin: 0 auto;
 	width: 100%;
 }
 
 .check{
 	@include margin-default;
+}
+
+.btn-reset{  // Hide the “Clear” button. It’s just better this way.
+	display: none;
 }
 
 .errors,
