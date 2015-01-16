@@ -2,64 +2,91 @@
 	// box model
 	margin-top: 0.25em;
 	padding: 0 .25em;
+	width: 100%;
 	// layout
+	display: block;
 	overflow: hidden;
 	// typography
 	color: transparent;
 	line-height: 0;
 	white-space: nowrap;
 		
-	@media screen and (min-width: 32em){
+	@include breakpoint($lil-groot){
 		width: 75%;
 	}
-	
-	@media screen and (min-width: 43em){
+
+	@include breakpoint($rocket){
+		width: 66%;
+	}
+
+	@media screen and (min-width: 30em){
 		width: 50%;
 	}
 	
-	@media screen and (min-width: 70em){
+	@include breakpoint($starlord){
 		width: 33%;
 	}
 	
-	@media screen and (min-width: 82em){
+	/*@include breakpoint($gamora){
+		width: 33%;
+	}*/
+
+	@media screen and (min-width: 55em){
 		width: 25%;
 	}
 	
+	/*@include breakpoint($drax){
+		width: 25%;
+	}*/
+
+	@media screen and (min-width: 85em){
+		width: 20%;
+	}
+
+	@media screen and (min-width: 100em){
+		width: 15%;
+	}
+	
 	&::before{
-		// box model
-		max-height: 4em;
 		// display
 		//display: flex;
+		display: block;
 		// misc
-		content: url(../images/evergreen-long-tree-oly.svg);
+		content: url(../images/evergreen-wide-tree.svg);
+		//content: url("file:///Users/justin/Sites/Evergreen-CAS/images/evergreen-wide-tree.svg");
 	}
 }
 
 #app-name{
-	//box model
-	border-top: 11px solid $evergreen-neue;
+	// box model
+	//border-top: 11px solid $evergreen-neue;
 	margin-top: 0;
 	margin-bottom: 0.9375rem; // 15/16
 	padding: 0 0.44991917523388em;  // 14px (base font-size) / 31.1167 (h1 font-size)
-	padding-top: 0.9375rem;  // 15/16
-	//typography
-	font-size: 1.719rem;  //27.506px  Step 3
-	line-height: 1.09067112629972;
+	//padding-top: 0.9375rem;  // 15/16
+	// typography
+	color: white;
+	//font-size: 1.719rem;  //27.506px  Step 3
+	font-weight: normal;
+	//line-height: 1.09067112629972;
+	text-align: center;
+	// backgrounds & borders
+	background-color: $evergreen-neue;
 	
 	@media screen and (min-width: 22em){
-		font-size: 1.945rem;  //31.112px
-		line-height: 1.44638724607868;  //45/31.112
+		//font-size: 1.945rem;  //31.112px
+		//line-height: 1.44638724607868;  //45/31.112
 	}
 	
 	@media screen and (min-width: 32em){
 		padding-right: 0.4637712789175em;  // 17px (base font-size) / 36.656 (h1 font-size)
 		padding-left: 0.4637712789175em;  // 17px (base font-size) / 36.656 (h1 font-size)
 		//typography
-		font-size: 2.291rem;  //36.656px
-		line-height: 1.227629855958097;  //45/36.656
+		//font-size: 2.291rem;  //36.656px
+		//line-height: 1.227629855958097;  //45/36.656
 	}
     
-	@media screen and (min-width: 43em){
+	/*@media screen and (min-width: 43em){
 		//typography
 		font-size: 2.782rem;  //44.512px  Step 5
 		line-height: 1.010963335729691;  //45/44.5167
@@ -69,17 +96,17 @@
 		//typography
 		font-size: 3.146rem;  //50.336  Step 6
 		line-height: 1.19198982835346;  //60/50.336
-	}
+	}*/
 	
 	// Height-based media-queries
 	@media screen and (min-height: 35em){
-		border-top-width: 22px;
+		//border-top-width: 22px;
 		margin-bottom:  1.875rem; // 30/16
-		padding-top: 1.875rem;   // 30/16
+		//padding-top: 1.875rem;   // 30/16
 	}
 	
 	@media screen and (min-height: 40em){
-		border-top-width: 44px;
+		//border-top-width: 44px;
 	}
 }
 
