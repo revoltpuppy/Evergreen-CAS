@@ -70,7 +70,7 @@ figure,
  * @section h
  */
 h1{
-	//box model
+/*	//box model
 	margin: 0.96401028277635em 0 0 0;  //30/31.12
 	//typography
 	font-size: 1.945rem;  //31.12px  Step 4
@@ -99,9 +99,8 @@ h1{
 		//typography
 		font-size: 3.146rem;  //50.336  Step 6
 		line-height: 1.19198982835346;  //60/50.336
-	}
-}
-h2{
+	}*/
+	
 	//box model
   margin-top: 1.55990016638935em;  //30/19.232
   //typography
@@ -126,6 +125,34 @@ h2{
     line-height: 0.96401028277635;  //30/31.12
   }
 }
+
+/*h2{
+	//box model
+  margin-top: 1.55990016638935em;  //30/19.232
+  //typography
+  color:#666;
+  font-size: 1.202rem;  //19.232px  Step 2
+  font-weight:bold;
+  line-height: 1.55990016638935;  //30/19.232
+  
+  @media screen and (min-width: 43em){
+  	//box model
+  	margin-top: 1.090750436300175em;  //30/27.504
+  	//typography
+    font-size: 1.719rem;  //27.504px  Step 3
+    line-height: 1.090750436300175; //30/27.504
+  }
+  
+  @media screen and (min-width: 125em){
+  	//box model
+  	margin-top: 0.96401028277635em;  //30/31.12
+  	//typography
+    font-size: 1.945rem;  //31.12px  Step 4
+    line-height: 0.96401028277635;  //30/31.12
+  }
+}*/
+
+h2,
 h3{
 	//box model
 	margin-top: 1.32352941176471em;  //22.5/17
@@ -151,6 +178,7 @@ h3{
 		line-height: 1.07142857142857;  //30/28
 	}
 }
+
 h4,
 h5,
 h6{
