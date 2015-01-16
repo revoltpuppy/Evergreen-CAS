@@ -5,6 +5,10 @@
  *
  * @section sass-constants
  */
+ 
+/**
+ * Colors
+ */
 $morning-light: #fdf4b6;
 $sky-blue: #0086ee;
 $evergreen-neue: #64933a;
@@ -19,6 +23,34 @@ $highlight: hsla(52, 95%, 85%, .5); //$morning-light
 $display-face: Avenir, "Avenir Next", "Proxima Nova", Helvetica, Arial, sans-serif;
 $text-face: Avenir, "Avenir Next", "Proxima Nova", Helvetica, Arial, sans-serif;
 $small-face: Verdana, Avenir, "Avenir Next", "Proxima Nova", Helvetica, Arial, sans-serif;
+
+/**
+ * Breakpoints
+ *
+ * See: https://medium.com/@timknight/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
+ */
+$lil-groot: (min:  20em);
+$rocket:    (min:  22em);
+$starlord:  (min:  32em);
+$gamora:    (min:  43em);
+$drax:      (min:  70em);
+$groot:     (min: 125em);
+
+@mixin breakpoint($map) {
+	$query: null;
+	@if map-has-key($map, min) {
+		$query: append($query, unquote("(min-width: #{map-get($map, min)})"))
+	}
+	@if map-has-key($map, min) and map-has-key($map, max) {
+		$query: append($query, unquote("and"))
+	}
+	@if map-has-key($map, max) {
+		$query: append($query, unquote("(max-width: #{map-get($map, max)})"))
+	}
+	@media screen and #{$query} {
+		@content;
+	}
+}
 
 //*
  // Modular Scale
