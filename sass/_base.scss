@@ -72,8 +72,11 @@ input{
 	font-size: 1em;
 	
 	&[type="checkbox"]{
+		// box model
 		height: auto;
-		margin: 0;
+		margin: 0.25em 0.5em .5em 0;
+		// layout
+		float: left;
 	}
 }
 
