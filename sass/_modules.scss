@@ -250,18 +250,18 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 		padding-left: 0;
 		
 		@media screen and (min-width: 20em){
-			//typography
-			column-count: 3;
+			// typography
+			//column-count: 3;
 			// list
 			list-style-type: none;
 		}
 		
 		@media screen and (min-width: 32em){
-			column-count: 4;
+			//column-count: 4;
 		}
 		
 		@media screen and (min-width: 70em){
-			column-count: 3;
+			//column-count: 3;
 		}
 	}
 }
