@@ -3,48 +3,49 @@
 }
 
 .fl-screenNavigator-view{  // Like .content-wrapper
-	//box model
+	// box model
 	min-height: 100vh;
-	//layout
+	// layout
 	display: flex;
 	flex-direction: column;
 }
 
-#content{  //Like .primary-content-wrapper
-	//box model
+#content{  // Like .primary-content-wrapper
+	// box model
 	margin: 0 .25em;
-	//layout
+	// layout
 	flex-grow: 1;
 	
 	@media screen and (min-width: 70em){
-		//box model
+		// box model
 		margin: 0 auto 3.75rem auto;
 		width: 100%;
 		max-width: 82em;
-		//layout
-		//align-items: flex-start;
+		// layout
+		align-items: flex-start;
 		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
 #login{
-	//box model
+	// box model
 	border: 1px solid mix(white, $blueberry-susan, 75%);
 	margin: 0 auto;
 	margin-bottom: 0.46875rem;  //7.5px
 	padding: 0 1em;
 	width: calc(100% - 1.5em);
 	max-width: 25em;
-	//layout
+	// layout
 	overflow: hidden;
-	//backgrounds & borders
+	// backgrounds & borders
 	background-color: mix(white, $blueberry-susan, 85%);
 	border-radius: 2px;
 	
 	@media screen and (min-width: 70em){
 		margin-right: 0;
-		margin-left: 16.2857%;
-		width: 53.1429%;
+		margin-left: 14.285714285714%;
+		width: 57.142857142857%;
 		max-width: none;
 	}
 }
@@ -52,21 +53,27 @@
 #sidebar{
 	margin: 0 .75em;
 	
+	@media screen and (min-width: 22em){
+		// box model
+		margin: 0 1em;
+	}
+	
 	@media screen and (min-width: 70em){
-		//box model
-		margin: 0 2%;
+		// box model
+		margin: 0;
+		padding: 0 1.0625rem;  //17px
 		width: 26.5714%;
-		//typography
+		// typography
 		@include base-type;
 	}
 }
 
 #footer{
-	//layout
+	// layout
 	overflow: hidden;
-	//typography
+	// typography
 	color: white;
-	//backgrounds and borders
+	// backgrounds and borders
 	background-color: black;
 }
 
