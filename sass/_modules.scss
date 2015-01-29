@@ -52,7 +52,7 @@
 		//display: flex;
 		display: block;
 		// misc
-		content: url(../images/evergreen-wide-tree.svg);
+		content: url("/images/evergreen-wide-tree.svg");
 		//content: url("file:///Users/justin/Sites/Evergreen-CAS/images/evergreen-wide-tree.svg");
 	}
 }
@@ -111,10 +111,10 @@
 }
 
 .fm-v{
-		//box model
+		// box model
 		margin: 0 auto;
 		max-width: 22em;
-		//layout
+		// layout
 		display: flex;
 		flex-direction: column;
 		
@@ -160,7 +160,8 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 }
 
 .errors,
-.success{
+.success,
+.info{
 	// box model
 	padding: 0.46875rem 1em;  // 7.5/16
 	// layout
@@ -173,7 +174,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	color: $wine;
 	// backgrounds & borders
 	background-color: $highlight !important;
-	background-image: url("../images/texture-1.png");
+	background-image: url("/images/texture-1.png");
 	
 	&::before{
 		// box model
@@ -195,11 +196,39 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	}
 }
 
-.success{
+.success,
+.info{
 	//backgrounds & borders
 	border-radius: 2px;
 	background-color: transparentize(mix(white, $sky-blue, 80%), .05) !important;
-	background-image: url("../images/texture-1.png");
+	background-image: url("/images/texture-1.png");
+}
+
+.info{
+	margin: 0 .75em;
+	
+	@include breakpoint($rocket){
+		// box model
+		margin: 0 1em 1.07142857142857em 1em;  // 15px
+	}
+	
+	@include breakpoint($starlord){
+		// box model
+		margin-right: auto;
+		margin-left: auto;
+		width: 32em;
+		max-width: calc(100% - 2em);
+	}
+	
+	@include breakpoint($gamora){
+		// box model
+		margin-bottom: 1.76470588235294em;  // 30px
+		width: 43em;
+	}
+	
+	> h2{
+		margin-top: 0;
+	}
 }
 
 /*.sidebar-content{
