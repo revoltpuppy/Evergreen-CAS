@@ -89,3 +89,12 @@ input.btn-submit:active{
 	background-color: mix(white, $evergreen-neue, 40%);  //IE 9
 	background-image: linear-gradient($evergreen-neue, mix($morning-light, $evergreen-neue, 20%));
 }
+
+/**
+ * Overrides
+ */
+.fl-controls-left input.btn-submit{  // Overrides Login button on the second page of the two-factor auth screen.
+	// box model
+	width: auto;
+	min-width: 0;
+}
