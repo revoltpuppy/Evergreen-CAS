@@ -22,7 +22,8 @@
 		width: 100%;
 		max-width: 82em;
 		// layout
-		align-items: flex-start;
+		align-content: flex-start;  // Makes the content push to the top.
+		align-items: flex-start;  // Makes the content independent of each others' height.
 		display: flex;
 		flex-wrap: wrap;
 	}
