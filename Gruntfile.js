@@ -5,27 +5,41 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		
 		/**
-		 * Add support for older browsers by adding vendor prefixes to
-		 * Sass properties, based on data from caniuse.com.
+		 * CSS post-processors
+		 *
+		 * autoprefixer-core adds support for older browsers by adding vendor
+		 * prefixes to Sass properties, based on data from caniuse.com.
 		 */
-		autoprefixer: {
-			options: {
-				browsers: ['last 3 Chrome versions', 'last 3 Firefox versions', 'last 3 Safari versions', 'last 3 Explorer versions']
+		postcss: {
+	    options: {
+		    processors: [
+			    /**
+					 * Add support for older browsers by adding vendor prefixes to
+					 * Sass properties, based on data from caniuse.com.
+					 */
+		    	require('autoprefixer')(  // add vendor prefixes
+						{
+							browsers: [
+								'last 3 Chrome versions',
+								'last 3 Safari versions',
+								'last 3 Firefox versions',
+								'last 3 iOS versions',
+								'last 3 Explorer versions',
+								'last 3 ChromeAndroid versions',
+								'last 6 Edge versions',  // we can cut this back when we know better how users are updating
+							]
+						}
+					),
+				]
 			},
 			default_styles: {
 				src: 'styles.css',
 				dest: 'styles.css'
 			},
-			/*print_styles: {
-				src: 'print.css',
-				dest: 'print.css'
+			dev_styles: {
+				src: 'styles-dev.css',
+				dest: 'styles-dev.css'
 			},
-			custom_css: {  // process a whole folder
-				expand: true,
-				flatten: true,
-				src: 'custom-css/*.css', // -> src/css/file1.css, src/css/file2.css
-				dest: 'custom-css/' // -> dest/css/file1.css, dest/css/file2.css
-			},*/
 		},
 		
 		/**
@@ -33,45 +47,32 @@ module.exports = function(grunt) {
 		 */
 		jshint: {
 			Gruntfile: ['Gruntfile.js'],
-			scripts: ['scripts.js']
 		},
 
 		/**
 		 * Process Sass into CSS.
 		 */
 		sass: {
-			stylesheets: {  // process specific files
+			build: {  // process specific files
 				options: {
-					style: 'compressed'
+					style: 'compressed',
+					sourcemap: 'none'
 				},
 				files: [
 					{'styles.css': 'styles.scss'},  // 'destination': 'source'
-					//{'print.css': 'print.scss'},
-					/*{                               // process this whole folder
-						expand: true,
-						cwd: 'custom-css/',
-						src: ['*.scss'],
-						dest: 'custom-css/',
-						ext: '.css'
-					}*/
+				]
+			},
+			dev: {  // process specific files
+				options: {
+					lineNumbers: true,
+					style: 'expanded',
+					sourcemap: 'none'
+				},
+				files: [
+					{'styles-dev.css': 'styles.scss'},  // 'destination': 'source'
 				]
 			},
 		},
-    
-    /**
-     * Compress JS by removing whitespace. Different from
-     * minification in that it doesn't replace variable and
-     * function names, which is easier to debug.
-     */
-		//uglify: {
-			//options: {
-				//banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-			//},
-			/*scripts: {
-				src: 'scripts.js',
-				dest: 'js/build/scripts.min.js'
-			}
-		},*/
 
 		watch: {
 			gruntfile: {  // Validate Gruntfile.
@@ -80,24 +81,19 @@ module.exports = function(grunt) {
 			},
 			css: {  // Autoprefix, then process Sass into CSS.
 				files: ['styles.scss', 'sass/**/*.scss'],
-				tasks: ['sass', 'autoprefixer']
+				tasks: ['sass', 'postcss']
 			},
-			/*js: {  // Uglify JavaScript.
-				files: ['scripts.js'],
-				tasks: ['uglify']
-			},*/
 		},
     
 	});
 
 	// Load the plugins.
-	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	//grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-postcss');
 
 	// Default task(s).
-	grunt.registerTask('default', ['sass', 'autoprefixer', 'uglify']);
+	grunt.registerTask('default', ['sass', 'postcss', 'jshint']);
 
 };

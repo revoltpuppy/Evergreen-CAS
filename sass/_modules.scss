@@ -49,11 +49,9 @@
 	
 	&::before{
 		// display
-		//display: flex;
 		display: block;
 		// misc
-		content: url("../images/evergreen-wide-tree.svg");
-		//content: url("file:///Users/justin/Sites/Evergreen-CAS/images/evergreen-wide-tree.svg");
+		content: url("/cas/images/evergreen-wide-tree.svg");
 	}
 }
 
@@ -172,7 +170,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	color: $wine;
 	// backgrounds & borders
 	background-color: $highlight !important;
-	background-image: url("../images/texture-1.png");
+	background-image: url("/cas/images/texture-1.png");
 	
 	&::before{
 		// box model
@@ -199,7 +197,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	//backgrounds & borders
 	border-radius: 2px;
 	background-color: transparentize(mix(white, $sky-blue, 80%), .05) !important;
-	background-image: url("../images/texture-1.png");
+	background-image: url("/cas/images/texture-1.png");
 }
 
 .info{

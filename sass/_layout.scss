@@ -1,3 +1,16 @@
+/**
+ * Element list is a generic container that is meant to house lists
+ * of designed elements, i.e. not a bulleted text list. It is meant
+ * to apply to uls and ols.
+ */
+.element-list{
+	// box model
+	margin-left: 0;
+	padding-left: 0;
+	// lists
+	list-style-type: none;
+}
+
 .flc-screenNavigator-view-container{  // Like .site-content
 	width: 100%;
 }

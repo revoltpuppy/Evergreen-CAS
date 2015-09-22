@@ -61,6 +61,7 @@ input[type="reset"]:active{
  * action that a user will expect to take. E.g., Submit would be
  * the .prime button while Cancel would be the default button.
  */
+input.prime,
 input.btn-submit{
 	//box model
 	border-color: $evergreen-old-style;
@@ -71,6 +72,8 @@ input.btn-submit{
 	background-color: $evergreen-neue;  //IE 9
 	background-image: linear-gradient(mix($morning-light, $evergreen-neue, 40%), $evergreen-neue);
 }
+
+input.prime:hover,
 input.btn-submit:hover{
 	//box model
 	border-bottom-color: $evergreen-old-style;
@@ -81,9 +84,13 @@ input.btn-submit:hover{
 	background-color: mix(white, $evergreen-neue, 20%);  //IE 9
 	background-image: linear-gradient(mix($morning-light, $evergreen-neue, 60%), mix(white, $evergreen-neue, 20%));
 }
+
+input.prime:focus,
 input.btn-submit:focus{
 	border-color: #999;
 }
+
+input.prime:active,
 input.btn-submit:active{
 	//backgrounds & borders
 	background-color: mix(white, $evergreen-neue, 40%);  //IE 9
