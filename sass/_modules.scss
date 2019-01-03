@@ -109,21 +109,19 @@
 }
 
 .fm-v{
-		// box model
-		margin: 0 auto;
-		// layout
-		display: flex;
-		flex-direction: column;
+	// box model
+	margin: 0 auto;
 	width: calc(100% - 4ch);
 	max-width: 20em;
+	// layout
+	display: flex;
+	flex-direction: column;
+}
 		
-		h2{
-			margin-top: 0.77990953049446em;  //15/19.233
-			
-			@media screen and (min-height: 35em){
-				//margin-top: 1.55981906098893em;
-			}
-		}
+.fm-v h2{
+	margin-top: 0.77990953049446em;  //15/19.233
+}
+
 }
 
 .fl-controls-left{
@@ -172,7 +170,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 .errors{
 	// typography
 	color: $wine;
-	// backgrounds & borders
+	// decoration
 	background-color: $highlight !important;
 	background-image: url("/cas/images/texture-1.png");
 	
@@ -180,7 +178,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 		// box model
 		border: 2px solid $wine;
 		margin-left: 1em;
-		margin-bottom: .5em;
+		margin-bottom: 0.5em;
 		width: 2em;
 		// layout
 		float: right;
@@ -189,7 +187,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	  font-weight:bold;
 	  line-height: 1.55990016638935;  //30/19.232
 	  text-align: center;
-	  // backgrounds & borders
+	  // decoration
 	  border-radius: 50%;
 		// misc
 		content: "!";
@@ -198,7 +196,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 
 .success,
 .info{
-	//backgrounds & borders
+	// decoration
 	border-radius: 2px;
 	background-color: transparentize(mix(white, $sky-blue, 80%), .05) !important;
 	background-image: url("/cas/images/texture-1.png");
@@ -243,14 +241,15 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	}
 }
 
-.sidebar-content{
+.sidebar-content h2{
+	// box model
+	@include margin-default;
+	// typography
+	@include base-type;
 	
-	h2{
-	  
-	  @include breakpoint($drax){
-		  margin-top: 0.77991em;
-	  }
-	}
+  @include breakpoint($drax){
+	  margin-top: 0.77991em;
+  }
 }
 
 #list-languages{

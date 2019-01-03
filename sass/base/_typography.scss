@@ -37,11 +37,11 @@ body,
 .base{
 	@include base-type;  // Step 0.5
 	
-	@media screen and (min-width: 43em){
+	@include breakpoint($gamora){
 		@include base-type-lg;  // Step 1
 	}
 	
-	@media screen and (min-width: 125em){
+	@include breakpoint($groot){
 		@include base-type-xl;  // Step 2
 	}
 }
@@ -55,11 +55,11 @@ figure,
 .base{
 	margin: 0.535714285714286em 0 1.071428571428571em 0;  //22.5/14/3 15/14  So, 22.5 + 7.5 + 15 = 45
 	
-	@media screen and (min-width: 43em){
+	@include breakpoint($gamora){
 		margin: 0.441176470588235em 0 0.882352941176471em 0;  //7.5/17/3  15/17  So, 22.5 + 7.5 + 15 = 45
 	}
 	
-	@media screen and (min-width: 125em){
+	@include breakpoint($groot){
 		margin: 0.51996672212978em 0 1.03993344425957em 0;  //10/19.232 20/19.232  So 30 + 10 + 20 = 60
 	}
 }
@@ -77,7 +77,7 @@ h1{
 	font-weight: normal;
 	line-height: 1.44601542416452;  //45/31.12
 
-	@media screen and (min-width: 32em){
+	@include breakpoint($starlord){
 		//box model
 		margin-top: 0.818419903972065em;
 		//typography
@@ -85,7 +85,7 @@ h1{
 		line-height: 1.227629855958097;  //45/35.656
 	}
     
-	@media screen and (min-width: 43em){
+	@include breakpoint($gamora){
 		//box model
 		margin-top: 0.673975557153127em;   //30/44.5167
 		//typography
@@ -93,7 +93,7 @@ h1{
 		line-height: 1.010963335729691;  //45/44.5167
 	}
 	
-	@media screen and (min-width: 125em){
+	@include breakpoint($groot){
 		//box model
 		margin-top: 1.19198982835346em;  //60/50.366
 		//typography
@@ -109,7 +109,7 @@ h1{
   font-weight:bold;
   line-height: 1.55990016638935;  //30/19.232
   
-  @media screen and (min-width: 43em){
+  @include breakpoint($gamora) {
   	//box model
   	margin-top: 1.090750436300175em;  //30/27.504
   	//typography
@@ -117,7 +117,7 @@ h1{
     line-height: 1.090750436300175; //30/27.504
   }
   
-  @media screen and (min-width: 125em){
+  @include breakpoint($groot) {
   	//box model
   	margin-top: 0.96401028277635em;  //30/31.12
   	//typography
@@ -126,7 +126,7 @@ h1{
   }
 }
 
-h2{
+h2 {
 	// box model
   margin-top: 1.55990016638935em;  // 30/19.232
   // typography
@@ -135,7 +135,7 @@ h2{
   font-weight:bold;
   line-height: 1.55990016638935;  // 30/19.232
   
-  @media screen and (min-width: 43em){
+  @include breakpoint($gamora) {
   	// box model
   	margin-top: 1.090750436300175em;  // 30/27.504
   	// typography
@@ -143,7 +143,7 @@ h2{
     line-height: 1.090750436300175; // 30/27.504
   }
   
-  @media screen and (min-width: 125em){
+  @include breakpoint($groot) {
   	// box model
   	margin-top: 0.96401028277635em;  // 30/31.12
   	// typography
@@ -152,7 +152,7 @@ h2{
   }
 }
 
-h3{
+h3 {
 	//box model
 	margin-top: 1.32352941176471em;  //22.5/17
 	//typography
@@ -161,7 +161,7 @@ h3{
 	font-weight: normal;
 	line-height: 1.32352941176471;  //22.5/17
     
-	@media screen and (min-width: 43em){
+	@include breakpoint($gamora) {
 		//box model
 		margin-top: 1.176286072772898em;  //30/25.504
 		//typography
@@ -169,7 +169,7 @@ h3{
 		line-height: 1.176286072772898;  //30/25.504
 	}
     
-	@media screen and (min-width: 125em){
+	@include breakpoint($groot) {
 		//box model
 		margin-top: 1.07142857142857em;  //30/28
 		//typography
@@ -181,14 +181,14 @@ h3{
 .info h2,
 h4,
 h5,
-h6{
+h6 {
 	//box model
   margin-top: 1.07142857142857em;  //15/14
   //typography
   font-size: 0.875rem;  //19.232px  Step .5
   line-height: 1.60714285714286;  //22.5/14
   
-  @media screen and (min-width: 43em){
+  @include breakpoint($gamora){
   	//box model
   	margin-top: 1.46814133307233em;  //30/20.434
   	//typography
@@ -196,7 +196,7 @@ h6{
     line-height: 1.46814133307233; //30/20.434
   }
   
-  @media screen and (min-width: 125em){
+  @include breakpoint($groot){
   	//box model
     margin-top: 1.090750436300175em;  //30/27.504
     //typography
@@ -204,11 +204,11 @@ h6{
     line-height: 1.090750436300175;  //30/27.504
   }
 }
-h5{
+h5 {
   color: #666;
   font-weight: bold;
 }
-h6{
+h6 {
 	color: #666;
   font-style: italic;
   font-weight: normal;
@@ -218,11 +218,11 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
 	//Bottom margin should match the p's top margin exactly, for consistency. If they don't match, change this rule.
 	margin-bottom: 0.46875rem; //7.5px
 
-	@media screen and (min-width: 125em){
+	@include breakpoint($groot){
 		margin-bottom: .625rem;  //10px
 	}  
 }
@@ -233,17 +233,17 @@ h6{
  * @section l
  */
 ul,
-ol{
+ol {
 	margin-left: 1.76470588235294em;
 	padding-left: 0;
 }
 
 ul,
-dl{
+dl {
     padding: 0;
 }
 
-ol ol{
+ol ol {
 	list-style-type: lower-alpha;
 }
 
@@ -253,7 +253,7 @@ dt{
 	//typography
 	font-weight: bold;
 	
-	@media screen and (min-width: 125em){
+	@include breakpoint($groot) {
 		margin-top: 0.51996672212978em;  //10/19.232 - Same as p margin-top
 	}
 }
@@ -261,7 +261,7 @@ dd{
 	margin-bottom: 1.071428571428571em;  //15/14 - Same as p margin-bottom
 	margin-left: 0;
 	
-	@media screen and (min-width: 125em){
+	@include breakpoint($groot) {
 		margin-bottom: 1.03993344425957em;  //20/19.232 - Same as p margin-bottom
 	}
 }
@@ -269,7 +269,7 @@ dd > p:first-child,
 dd > ul:first-child,
 dd > ol:first-child,
 dd > blockquote:first-child,
-dd > blockquote:first-child > p:first-child{
+dd > blockquote:first-child > p:first-child {
 	margin-top: 0;
 }
 
@@ -311,16 +311,16 @@ a:active{
 	 *
 	 * @section a-site-name
 	 */
-	.site-name a{
+	.site-name a {
 		border-bottom-width: 0;
 	
 		&,
 		&:visited,
-		&:hover{
+		&:hover {
 		    color: #fff;
 		    text-shadow: 0 1px 3px hsl(275, 33%, 11%);
 		    
-		    @media screen and (min-width: 70em){
+		    @include breakpoint($drax){
 		    	text-shadow:
 						-1px 1px $shadow,
 						-1px 2px $shadow,
@@ -340,11 +340,11 @@ a:active{
  * @section other-type
  */
 
-strong{
+strong {
 	font-weight: bold;
 }
 
-em{
+em {
 	font-style: italic;
 }
 
@@ -352,36 +352,36 @@ figcaption,
 small,
 //caption,  //table caption
 .details,  //deprecated
-.caption{
+.caption {
 	@include small-type;
 	
-	@media screen and (min-width: 125em){
+	@include breakpoint($groot) {
 		font-family: $text-face;
 		@include base-type;
 	}
 }
 
-small{
+small {
 	//color: #333;
 	
-	[role="contentinfo"] &{
+	[role="contentinfo"] & {
 		color: #ccc;
 	}
 }
 
 code,
-pre{
+pre {
 	font-family: monospace, serif;
 }
 
-blockquote{
+blockquote {
 	//box model
 	padding-left: 1em;
 	//typography
 	font-style: italic;
 }
 
-hr{
+hr {
 	//box model
 	border: 0;
 	height: 5px;
