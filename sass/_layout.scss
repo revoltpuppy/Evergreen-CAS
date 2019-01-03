@@ -32,12 +32,15 @@
 	overflow: hidden;
 	
 	@include breakpoint($rocket) {
-		border-right: 1px solid mix(white, $blueberry-susan, 67%);
-		border-bottom: 1px solid mix(white, $blueberry-susan, 67%);
-		border-left: 1px solid mix(white, $blueberry-susan, 67%);
+		// box model
+		border-right: 1px solid mix(white, $blueberry-susan, 75%);
+		border-bottom: 1px solid mix(white, $blueberry-susan, 75%);
+		border-left: 1px solid mix(white, $blueberry-susan, 75%);
 		margin: 0 auto;
 		width: calc(100% - 4ch);
 		max-width: 50ch;
+		// decoration
+		border-radius: 6px;
 	}
 	
 	@include breakpoint($starlord) {
