@@ -9,25 +9,24 @@
 button,
 input[type="submit"],
 input[type="reset"]{
-	//box model
+	// box model
 	border: 1px solid $sky-blue;
 	height: auto;
 	margin-bottom: 1.262201279030629em;  // 15/11.884
-	padding: 5px .5em;
-	//layout
+	padding: 5px 0.5em;
+	// layout
 	display: inline-block;
-	//typography
+	// typography
 	color: #333333;
 	font-family: $display-face;
 	font-size: 1em;
 	font-weight: normal;
-	//line-height:  1.32352941176471;  // 22.5/17
 	text-shadow: 0 1px 0 $highlight;
 	// decoration
 	background-image: linear-gradient(mix($morning-light, $sky-blue, 80%), mix(white, $sky-blue, 40%));
-	border-radius: .2em;
-	//miscelaneous
-	box-shadow: 0 .2em .2em $shadow;
+	border-radius: 0.2em;
+	// miscelaneous
+	box-shadow: 0 0.2em 0.2em $shadow;
 }
 button:hover,
 input[type="submit"]:hover,
@@ -39,15 +38,15 @@ input[type="reset"]:hover{
 button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus{
-	border-color:#999;
-	outline-width:0;
+	border-color: #999;
+	outline-width: 0;
 }
 button:active,
 input[type="submit"]:active,
 input[type="reset"]:active{
 	// decoration
 	background-image: linear-gradient(mix(white, $sky-blue, 40%), mix($morning-light, $sky-blue, 60%));
-	//miscelaneous
+	// miscelaneous
 	box-shadow: inset 0 .1em .2em hsla(0,0%,0%,.25);
 }
 
@@ -60,9 +59,9 @@ input[type="reset"]:active{
  */
 input.prime,
 input.btn-submit{
-	//box model
+	// box model
 	border-color: $evergreen-old-style;
-	//typography
+	// typography
 	color: white;
 	text-shadow: 0 -1px 0 $shadow;
 	// decoration
@@ -71,9 +70,9 @@ input.btn-submit{
 
 input.prime:hover,
 input.btn-submit:hover{
-	//box model
+	// box model
 	border-bottom-color: $evergreen-old-style;
-	//typography
+	// typography
 	color: $evergreen-old-style;
 	text-shadow: 0 1px 0 $highlight;
 	// decoration
