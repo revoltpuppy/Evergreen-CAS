@@ -278,32 +278,28 @@ dd > blockquote:first-child > p:first-child {
  *
  * @section a
  */
-a,
-.internal-users a:visited,
-.search-tools a:visited,
-.tertiary-nav-list a:visited{
-	//box model
-	border-bottom: 1px solid mix(white, $blueberry-susan, 75);
+a {
 	//typography
 	color: $blueberry-susan;
 	font-weight: bold;
-	text-decoration: none;
-}
-a:visited{
-    border-bottom-color: mix(white, $wine, 75);
-    color: $wine;
-}
-a:hover,
-.internal-users a:hover,
-.search-tools a:hover,
-.tertiary-nav-list a:hover{
-  border-bottom-color: $sky-blue;
-  color: $sky-blue;
-}
-a:focus,
-a:active{
-  outline-width: 0;
-  background-color: transparentize($blueberry-susan, .9);
+	text-decoration-color: mix(white, $blueberry-susan, 75);
+	text-decoration-skip: ink;
+	
+	&:visited {
+		text-decoration-color: mix(white, $wine, 75);
+		color: $wine;
+  }
+
+	&:hover {
+		text-decoration-color: $sky-blue;
+		color: $sky-blue;
+	}
+
+	&:focus,
+	&:active {
+		outline-width: 0;
+		background-color: transparentize($blueberry-susan, .9);
+	}
 }
 
 	/**
