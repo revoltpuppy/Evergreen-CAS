@@ -9,6 +9,7 @@
 	// typography
 	color: transparent;
 	line-height: 0;
+	text-align: center;
 	white-space: nowrap;
 		
 	@include breakpoint($lil-groot){
@@ -23,7 +24,11 @@
 		// display
 		display: block;
 		// misc
-		content: url("/cas/images/evergreen-wide-tree.svg");
+		content: url("../images/Evergreen_SEC_CMYK.svg");
+		
+		@include breakpoint($gamora) {
+			content: url("../images/Evergreen_PRI_CMYK.svg");
+		}
 	}
 }
 
