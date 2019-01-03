@@ -57,10 +57,11 @@ input[type="reset"]:active{
  * action that a user will expect to take. E.g., Submit would be
  * the .prime button while Cancel would be the default button.
  */
-input.prime,
 input.btn-submit{
 	// box model
 	border-color: $evergreen-old-style;
+	padding: 1em;
+	width: 100%;
 	// typography
 	color: white;
 	text-shadow: 0 -1px 0 $shadow;
@@ -68,7 +69,6 @@ input.btn-submit{
 	background-image: linear-gradient(mix($morning-light, $evergreen-neue, 40%), $evergreen-neue);
 }
 
-input.prime:hover,
 input.btn-submit:hover{
 	// box model
 	border-bottom-color: $evergreen-old-style;
@@ -79,12 +79,10 @@ input.btn-submit:hover{
 	background-image: linear-gradient(mix($morning-light, $evergreen-neue, 60%), mix(white, $evergreen-neue, 20%));
 }
 
-input.prime:focus,
 input.btn-submit:focus{
 	border-color: #999;
 }
 
-input.prime:active,
 input.btn-submit:active{
 	// decoration
 	background-image: linear-gradient($evergreen-neue, mix($morning-light, $evergreen-neue, 20%));
@@ -93,8 +91,13 @@ input.btn-submit:active{
 /**
  * Overrides
  */
+[value="LOGIN"] {
+	letter-spacing: 0.2ch;
+}
+
 .fl-controls-left input.btn-submit{  // Overrides Login button on the second page of the two-factor auth screen.
 	// box model
+	padding: 5px 0.5em;
 	width: auto;
 	min-width: 0;
 }
