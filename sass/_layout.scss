@@ -21,62 +21,47 @@
 	// layout
 	display: flex;
 	flex-direction: column;
-}
-
-#content{  // Like .primary-content-wrapper
-	// box model
-	margin: 0 .25em;
-	// layout
-	flex-grow: 1;
-	
-	@media screen and (min-width: 70em){
-		// box model
-		margin: 0 auto 3.75rem auto;
-		width: 100%;
-		max-width: 82em;
-		// layout
-		align-content: flex-start;  // Makes the content push to the top.
-		align-items: flex-start;  // Makes the content independent of each others' height.
-		display: flex;
-		flex-wrap: wrap;
-	}
+	justify-content: center;
 }
 
 #login{
 	// box model
-	border: 1px solid mix(white, $blueberry-susan, 75%);
-	margin: 0 auto;
+	border-top: 1em solid $evergreen-neue;
 	margin-bottom: 0.46875rem;  //7.5px
-	padding: 0 1em;
-	width: calc(100% - 1.5em);
-	max-width: 25em;
 	// layout
 	overflow: hidden;
-	// backgrounds & borders
-	background-color: mix(white, $blueberry-susan, 85%);
-	border-radius: 2px;
 	
-	@media screen and (min-width: 70em){
-		margin-right: 0;
-		margin-left: 14.285714285714%;
-		width: 57.142857142857%;
-		max-width: none;
+	@include breakpoint($rocket) {
+		border-right: 1px solid mix(white, $blueberry-susan, 67%);
+		border-bottom: 1px solid mix(white, $blueberry-susan, 67%);
+		border-left: 1px solid mix(white, $blueberry-susan, 67%);
+		margin: 0 auto;
+		width: calc(100% - 4ch);
+		max-width: 50ch;
+	}
+	
+	@include breakpoint($starlord) {
+		padding: 1em 0 2em;
+	}
+	
+	@include breakpoint($drax) {
+		max-width: 75ch;
 	}
 }
 
 #sidebar{
-	margin: 0 .75em;
+	margin: 0 0.75em;
 	
-	@media screen and (min-width: 22em){
+	@include breakpoint($rocket) {
 		// box model
-		margin: 0 1em;
+		margin: 0 auto;
+		width: calc(100% - 4ch);
+		max-width: 50ch;
 	}
 	
-	@media screen and (min-width: 70em){
+	@include breakpoint($gamora){
 		// box model
-		margin: 0;
-		padding: 0 1.0625rem;  //17px
-		width: 26.5714%;
+		max-width: 44ch;
 		// typography
 		@include base-type;
 	}

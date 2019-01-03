@@ -111,10 +111,11 @@
 .fm-v{
 		// box model
 		margin: 0 auto;
-		max-width: 22em;
 		// layout
 		display: flex;
 		flex-direction: column;
+	width: calc(100% - 4ch);
+	max-width: 20em;
 		
 		h2{
 			margin-top: 0.77990953049446em;  //15/19.233
@@ -159,7 +160,10 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 .success,
 .info{
 	// box model
-	padding: 0.46875rem 1em;  // 7.5/16
+	margin: 0 auto;
+	padding: 0.46875rem 2ch;  // 7.5/16
+	width: 100%;
+	max-width: 50ch;
 	// layout
 	overflow: hidden;
 	// typography
