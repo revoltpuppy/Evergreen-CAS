@@ -52,17 +52,23 @@
 .fl-controls-left{
 	// box model
 	width: 100%;
+}
+	
+.fl-controls-left input{
+	// box model
+	margin-bottom: 1.5em;
+	padding: 0 1ch;
+	min-height: 2em;
+	width: 100%;
+	// typography
+	@include base-type-xl;
+}
+
+.fl-label {
+	// box model
+	margin-bottom: 0.25em;
 	// layout
-	//display: flex;
-	//flex-direction: row;
-	
-	label{
-		margin-right: .5em;
-	}
-	
-	input{
-		width: 66%;
-	}
+	display: block;
 }
 
 .check,  // “Warn me” checkbox
