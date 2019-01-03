@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 								'last 3 Safari versions',
 								'last 3 Firefox versions',
 								'last 3 iOS versions',
-								'last 3 Explorer versions',
+								'last 1 Explorer versions',
 								'last 3 ChromeAndroid versions',
 								'last 6 Edge versions',  // we can cut this back when we know better how users are updating
 							]
