@@ -21,7 +21,10 @@
 	// layout
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	
+	@include breakpoint($rocket) {
+		justify-content: center;
+	}
 }
 
 #login{
