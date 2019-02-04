@@ -227,6 +227,10 @@ h6 {
 	}  
 }
 
+.info > h2 {
+	color: mix($black, $sky-blue, 40%);
+}
+
 /**
  * 3. Lists
  *
