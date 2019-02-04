@@ -138,9 +138,12 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 .success,
 .info {
 	// decoration
-	border-radius: 2px;
 	background-color: transparentize(mix(white, $sky-blue, 80%), .05) !important;
 	background-image: url("/cas/images/texture-1.png");
+	
+	@include breakpoint($rocket) {
+		border-radius: 6px;
+	}
 }
 
 .info {

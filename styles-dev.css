@@ -192,36 +192,6 @@ figure,
  */
 /* line 72, sass/base/_typography.scss */
 h1 {
-  /*	//box model
-  	margin: 0.96401028277635em 0 0 0;  //30/31.12
-  	//typography
-  	font-size: 1.945rem;  //31.12px  Step 4
-  	font-weight: normal;
-  	line-height: 1.44601542416452;  //45/31.12
-  
-  	@include breakpoint($starlord){
-  		//box model
-  		margin-top: 0.818419903972065em;
-  		//typography
-  		font-size: 2.291rem;  //36.656px
-  		line-height: 1.227629855958097;  //45/35.656
-  	}
-      
-  	@include breakpoint($gamora){
-  		//box model
-  		margin-top: 0.673975557153127em;   //30/44.5167
-  		//typography
-  		font-size: 2.782rem;  //44.512px  Step 5
-  		line-height: 1.010963335729691;  //45/44.5167
-  	}
-  	
-  	@include breakpoint($groot){
-  		//box model
-  		margin-top: 1.19198982835346em;  //60/50.366
-  		//typography
-  		font-size: 3.146rem;  //50.336  Step 6
-  		line-height: 1.19198982835346;  //60/50.336
-  	}*/
   margin-top: 1.55990016638935em;
   color: #666;
   font-size: 1.202rem;
@@ -245,7 +215,7 @@ h1 {
   }
 }
 
-/* line 129, sass/base/_typography.scss */
+/* line 98, sass/base/_typography.scss */
 h2 {
   margin-top: 1.55990016638935em;
   color: #666;
@@ -254,7 +224,7 @@ h2 {
   line-height: 1.55990016638935;
 }
 @media screen and (min-width: 43em) {
-  /* line 129, sass/base/_typography.scss */
+  /* line 98, sass/base/_typography.scss */
   h2 {
     margin-top: 1.090750436300175em;
     font-size: 1.719rem;
@@ -262,7 +232,7 @@ h2 {
   }
 }
 @media screen and (min-width: 125em) {
-  /* line 129, sass/base/_typography.scss */
+  /* line 98, sass/base/_typography.scss */
   h2 {
     margin-top: 0.96401028277635em;
     font-size: 1.945rem;
@@ -270,7 +240,7 @@ h2 {
   }
 }
 
-/* line 155, sass/base/_typography.scss */
+/* line 124, sass/base/_typography.scss */
 h3 {
   margin-top: 1.32352941176471em;
   color: #333;
@@ -279,7 +249,7 @@ h3 {
   line-height: 1.32352941176471;
 }
 @media screen and (min-width: 43em) {
-  /* line 155, sass/base/_typography.scss */
+  /* line 124, sass/base/_typography.scss */
   h3 {
     margin-top: 1.176286072772898em;
     font-size: 1.594rem;
@@ -287,7 +257,7 @@ h3 {
   }
 }
 @media screen and (min-width: 125em) {
-  /* line 155, sass/base/_typography.scss */
+  /* line 124, sass/base/_typography.scss */
   h3 {
     margin-top: 1.07142857142857em;
     font-size: 1.75rem;
@@ -295,7 +265,7 @@ h3 {
   }
 }
 
-/* line 181, sass/base/_typography.scss */
+/* line 150, sass/base/_typography.scss */
 .info > h2,
 h4,
 h5,
@@ -305,7 +275,7 @@ h6 {
   line-height: 1.60714285714286;
 }
 @media screen and (min-width: 43em) {
-  /* line 181, sass/base/_typography.scss */
+  /* line 150, sass/base/_typography.scss */
   .info > h2,
   h4,
   h5,
@@ -316,7 +286,7 @@ h6 {
   }
 }
 @media screen and (min-width: 125em) {
-  /* line 181, sass/base/_typography.scss */
+  /* line 150, sass/base/_typography.scss */
   .info > h2,
   h4,
   h5,
@@ -327,20 +297,20 @@ h6 {
   }
 }
 
-/* line 208, sass/base/_typography.scss */
+/* line 177, sass/base/_typography.scss */
 h5 {
   color: #666;
   font-weight: bold;
 }
 
-/* line 213, sass/base/_typography.scss */
+/* line 182, sass/base/_typography.scss */
 h6 {
   color: #666;
   font-style: italic;
   font-weight: normal;
 }
 
-/* line 219, sass/base/_typography.scss */
+/* line 188, sass/base/_typography.scss */
 h1,
 h2,
 h3,
@@ -350,7 +320,7 @@ h6 {
   margin-bottom: 0.46875rem;
 }
 @media screen and (min-width: 125em) {
-  /* line 219, sass/base/_typography.scss */
+  /* line 188, sass/base/_typography.scss */
   h1,
   h2,
   h3,
@@ -361,59 +331,54 @@ h6 {
   }
 }
 
-/* line 233, sass/base/_typography.scss */
-.info > h2 {
-  color: #00508f;
-}
-
 /**
  * 3. Lists
  *
  * @section l
  */
-/* line 242, sass/base/_typography.scss */
+/* line 207, sass/base/_typography.scss */
 ul,
 ol {
   margin-left: 1.76470588235294em;
   padding-left: 0;
 }
 
-/* line 248, sass/base/_typography.scss */
+/* line 213, sass/base/_typography.scss */
 ul,
 dl {
   padding: 0;
 }
 
-/* line 253, sass/base/_typography.scss */
+/* line 218, sass/base/_typography.scss */
 ol ol {
   list-style-type: lower-alpha;
 }
 
-/* line 257, sass/base/_typography.scss */
+/* line 222, sass/base/_typography.scss */
 dt {
   margin-top: 0.535714285714286em;
   font-weight: bold;
 }
 @media screen and (min-width: 125em) {
-  /* line 257, sass/base/_typography.scss */
+  /* line 222, sass/base/_typography.scss */
   dt {
     margin-top: 0.51996672212978em;
   }
 }
 
-/* line 267, sass/base/_typography.scss */
+/* line 232, sass/base/_typography.scss */
 dd {
   margin-bottom: 1.071428571428571em;
   margin-left: 0;
 }
 @media screen and (min-width: 125em) {
-  /* line 267, sass/base/_typography.scss */
+  /* line 232, sass/base/_typography.scss */
   dd {
     margin-bottom: 1.03993344425957em;
   }
 }
 
-/* line 275, sass/base/_typography.scss */
+/* line 240, sass/base/_typography.scss */
 dd > p:first-child,
 dd > ul:first-child,
 dd > ol:first-child,
@@ -427,7 +392,7 @@ dd > blockquote:first-child > p:first-child {
  *
  * @section a
  */
-/* line 288, sass/base/_typography.scss */
+/* line 253, sass/base/_typography.scss */
 a {
   color: #492c5d;
   font-weight: bold;
@@ -435,19 +400,19 @@ a {
           text-decoration-color: #d2cad7;
   text-decoration-skip: ink;
 }
-/* line 295, sass/base/_typography.scss */
+/* line 260, sass/base/_typography.scss */
 a:visited {
   -webkit-text-decoration-color: #d7c3c8;
           text-decoration-color: #d7c3c8;
   color: #600f21;
 }
-/* line 300, sass/base/_typography.scss */
+/* line 265, sass/base/_typography.scss */
 a:hover {
   -webkit-text-decoration-color: #0086ee;
           text-decoration-color: #0086ee;
   color: #0086ee;
 }
-/* line 305, sass/base/_typography.scss */
+/* line 270, sass/base/_typography.scss */
 a:focus, a:active {
   outline-width: 0;
   background-color: rgba(73, 44, 93, 0.1);
@@ -458,17 +423,17 @@ a:focus, a:active {
  *
  * @section a-site-name
  */
-/* line 317, sass/base/_typography.scss */
+/* line 282, sass/base/_typography.scss */
 .site-name a {
   border-bottom-width: 0;
 }
-/* line 320, sass/base/_typography.scss */
+/* line 285, sass/base/_typography.scss */
 .site-name a, .site-name a:visited, .site-name a:hover {
   color: #fff;
   text-shadow: 0 1px 3px #1e1325;
 }
 @media screen and (min-width: 70em) {
-  /* line 320, sass/base/_typography.scss */
+  /* line 285, sass/base/_typography.scss */
   .site-name a, .site-name a:visited, .site-name a:hover {
     text-shadow: -1px 1px rgba(30, 19, 37, 0.25), -1px 2px rgba(30, 19, 37, 0.25), -1px 3px rgba(30, 19, 37, 0.25), -1px 4px rgba(30, 19, 37, 0.25), -1px 5px rgba(30, 19, 37, 0.25), -1px 6px rgba(30, 19, 37, 0.25), -1px 7px 0.5px rgba(30, 19, 37, 0.25);
   }
@@ -479,17 +444,17 @@ a:focus, a:active {
  *
  * @section other-type
  */
-/* line 346, sass/base/_typography.scss */
+/* line 311, sass/base/_typography.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 350, sass/base/_typography.scss */
+/* line 315, sass/base/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 354, sass/base/_typography.scss */
+/* line 319, sass/base/_typography.scss */
 figcaption,
 small,
 .details,
@@ -499,7 +464,7 @@ small,
   line-height: 1.427619682116684;
 }
 @media screen and (min-width: 125em) {
-  /* line 354, sass/base/_typography.scss */
+  /* line 319, sass/base/_typography.scss */
   figcaption,
   small,
   .details,
@@ -510,24 +475,24 @@ small,
   }
 }
 
-/* line 370, sass/base/_typography.scss */
+/* line 334, sass/base/_typography.scss */
 [role="contentinfo"] small {
   color: #ccc;
 }
 
-/* line 375, sass/base/_typography.scss */
+/* line 339, sass/base/_typography.scss */
 code,
 pre {
   font-family: monospace, serif;
 }
 
-/* line 380, sass/base/_typography.scss */
+/* line 344, sass/base/_typography.scss */
 blockquote {
   padding-left: 1em;
   font-style: italic;
 }
 
-/* line 387, sass/base/_typography.scss */
+/* line 351, sass/base/_typography.scss */
 hr {
   border: 0;
   height: 5px;
@@ -925,61 +890,68 @@ input.btn-reset {
 /* line 138, sass/_modules.scss */
 .success,
 .info {
-  border-radius: 2px;
   background-color: rgba(204, 231, 252, 0.95) !important;
   background-image: url("/cas/images/texture-1.png");
 }
+@media screen and (min-width: 22em) {
+  /* line 138, sass/_modules.scss */
+  .success,
+  .info {
+    border-radius: 6px;
+  }
+}
 
 @media screen and (min-width: 22em) {
-  /* line 146, sass/_modules.scss */
+  /* line 149, sass/_modules.scss */
   .info {
     margin: 0 auto 1.07142857142857em;
     width: calc(100% - 4ch);
   }
 }
 @media screen and (min-width: 70em) {
-  /* line 146, sass/_modules.scss */
+  /* line 149, sass/_modules.scss */
   .info {
     margin-bottom: 1.76470588235294em;
     max-width: 75ch;
   }
 }
 
-/* line 161, sass/_modules.scss */
+/* line 164, sass/_modules.scss */
 .info > h2 {
   margin-top: 0;
+  color: #00508f;
   font-weight: bold;
 }
 
-/* line 168, sass/_modules.scss */
+/* line 172, sass/_modules.scss */
 .info strong {
   font-weight: normal;
 }
 
-/* line 172, sass/_modules.scss */
+/* line 176, sass/_modules.scss */
 .sidebar-content h2 {
   margin: 0.535714285714286em 0 1.071428571428571em 0;
   font-size: 0.875rem;
   line-height: 1.42857142857143;
 }
 @media screen and (min-width: 70em) {
-  /* line 172, sass/_modules.scss */
+  /* line 176, sass/_modules.scss */
   .sidebar-content h2 {
     margin-top: 0.77991em;
   }
 }
 
-/* line 183, sass/_modules.scss */
+/* line 187, sass/_modules.scss */
 #list-languages {
   display: none;
 }
 
-/* line 187, sass/_modules.scss */
+/* line 191, sass/_modules.scss */
 #footer {
   display: none;
 }
 
-/* line 191, sass/_modules.scss */
+/* line 195, sass/_modules.scss */
 #jasig {
   display: none;
 }
