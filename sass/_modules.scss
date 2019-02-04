@@ -100,7 +100,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 .info{
 	// box model
 	margin: 0 auto;
-	padding: 0.46875rem 2ch;  // 7.5/16
+	padding: 1.07142857em 2ch;  // 15/14
 	width: 100%;
 	max-width: 50ch;
 	// layout
@@ -144,32 +144,16 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 }
 
 .info{
-	margin: 0 .75em;
 	
 	@include breakpoint($rocket){
 		// box model
 		margin: 0 auto 1.07142857142857em;  // 15px
-		width: calc(100% - 1.5em);
+		width: calc(100% - 4ch);
 		//max-width: 25em;
 	}
 	
-	@include breakpoint($starlord){
-		// box model
-		margin-right: auto;
-		margin-left: auto;
-		//width: 32em;
-		max-width: calc(100% - 2em);
-	}
-	
 	@include breakpoint($drax){
-		// box model
-		margin-right: 0;
 		margin-bottom: 1.76470588235294em;  // 30px
-		margin-left: 14.285714285714%;
-		width: 57.142857142857%;
-		max-width: none;
-	}
-	
 	> h2{
 		// box model
 		margin-top: 0;
