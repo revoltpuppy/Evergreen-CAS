@@ -1,4 +1,4 @@
-#company-name{
+#company-name {
 	// box model
 	margin: 0.5em auto;
 	width: 100%;
@@ -12,7 +12,7 @@
 	text-align: center;
 	white-space: nowrap;
 		
-	@include breakpoint($lil-groot){
+	@include breakpoint($lil-groot) {
 		width: 50%;
 	}
 	
@@ -32,11 +32,11 @@
 	}
 }
 
-#app-name{  // “Central Authentication Service (CAS)”
+#app-name {  // “Central Authentication Service (CAS)”
 	display: none;
 }
 
-.fm-v{
+.fm-v {
 	// box model
 	margin: 0 auto;
 	width: calc(100% - 4ch);
@@ -46,7 +46,7 @@
 	flex-direction: column;
 }
 		
-.fm-v h2{
+.fm-v h2 {
 	margin-top: 0.77990953049446em;  //15/19.233
 }
 
@@ -54,12 +54,12 @@
 	display: none;
 }
 
-.fl-controls-left{
+.fl-controls-left {
 	// box model
 	width: 100%;
 }
 	
-.fl-controls-left input{
+.fl-controls-left input {
 	// box model
 	margin-bottom: 1.5em;
 	padding: 0 1ch;
@@ -77,12 +77,12 @@
 }
 
 .check,  // “Warn me” checkbox
-.btn-row{  // Row with “Submit” and “Clear” buttons
+.btn-row {  // Row with “Submit” and “Clear” buttons
 	margin: 0 auto;
 	width: 100%;
 }
 
-.check{
+.check {
 	@include margin-default;
 }
 
@@ -97,7 +97,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 
 .errors,
 .success,
-.info{
+.info {
 	// box model
 	margin: 0 auto;
 	padding: 1.07142857em 2ch;  // 15/14
@@ -108,14 +108,14 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	// typography
 }
 
-.errors{
+.errors {
 	// typography
 	color: $wine;
 	// decoration
 	background-color: $highlight !important;
 	background-image: url("/cas/images/texture-1.png");
 	
-	&::before{
+	&::before {
 		// box model
 		border: 2px solid $wine;
 		margin-left: 1em;
@@ -136,14 +136,14 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 }
 
 .success,
-.info{
+.info {
 	// decoration
 	border-radius: 2px;
 	background-color: transparentize(mix(white, $sky-blue, 80%), .05) !important;
 	background-image: url("/cas/images/texture-1.png");
 }
 
-.info{
+.info {
 	
 	@include breakpoint($rocket){
 		// box model
@@ -154,37 +154,41 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	
 	@include breakpoint($drax){
 		margin-bottom: 1.76470588235294em;  // 30px
-	> h2{
-		// box model
-		margin-top: 0;
-		// typography
-		font-weight: bold;
-	}
-	
-	strong{
-		font-weight: normal;
+		max-width: 75ch;
 	}
 }
 
-.sidebar-content h2{
+.info > h2 {
+	// box model
+	margin-top: 0;
+	// typography
+	color: mix($black, $sky-blue, 40%);
+	font-weight: bold;
+}
+	
+.info strong {
+	font-weight: normal;
+}
+
+.sidebar-content h2 {
 	// box model
 	@include margin-default;
 	// typography
 	@include base-type;
 	
-  @include breakpoint($drax){
+  @include breakpoint($drax) {
 	  margin-top: 0.77991em;
   }
 }
 
-#list-languages{
+#list-languages {
 	display: none;
 }
 
-#footer{
+#footer {
 	display: none;
 }
 
-#jasig{
+#jasig {
 	display: none;
 }
