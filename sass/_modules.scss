@@ -184,6 +184,25 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
   }
 }
 
+.help-list {
+
+	@include breakpoint($starlord) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.help-list__item {
+	// box model
+	margin: 0.535714285714286em 0 1.071428571428571em 0;  // This should just match the p margin
+	// layout
+	display: block;
+	
+	/*&:first-child {
+		margin-right: 2ch;
+	}*/
+}
+
 #list-languages {
 	display: none;
 }
