@@ -148,14 +148,14 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 
 .info {
 	
-	@include breakpoint($rocket){
+	@include breakpoint($rocket) {
 		// box model
 		margin: 0 auto 1.07142857142857em;  // 15px
 		width: calc(100% - 4ch);
 		//max-width: 25em;
 	}
 	
-	@include breakpoint($drax){
+	@include breakpoint($drax) {
 		margin-bottom: 1.76470588235294em;  // 30px
 		max-width: 75ch;
 	}
