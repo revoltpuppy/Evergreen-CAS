@@ -56,20 +56,28 @@
 }
 
 #sidebar{
-	margin: 0 0.75em;
+	margin: 0 auto;
+	width: calc(100% - 4ch);
+	max-width: 20em;
 	
 	@include breakpoint($rocket) {
 		// box model
 		margin: 0 auto;
-		width: calc(100% - 4ch);
 		max-width: 50ch;
 	}
-	
-	@include breakpoint($gamora){
+
+	/*@include breakpoint($gamora){
 		// box model
-		max-width: 44ch;
-		// typography
-		@include base-type;
+		max-width: 50ch;
+	}*/
+}
+
+.sidebar-content {
+	@include base-type;  // Always use smaller type
+
+	@include breakpoint($rocket) {
+		// box model
+		padding: 0 6px;  // Accounts for 6px border-radius
 	}
 }
 
