@@ -102,27 +102,31 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	margin: 0 auto;
 	padding: 1.07142857em 2ch;  // 15/14
 	width: 100%;
-	max-width: 50ch;
 	// layout
 	overflow: hidden;
 	// typography
 }
 
 .errors {
+	// box model
+	border: 1px solid $wine;
+	// layout
+	align-items: flex-start;
+	display: flex;
 	// typography
 	color: $wine;
 	// decoration
 	background-color: $highlight !important;
-	background-image: url("/cas/images/texture-1.png");
+	border-radius: 6px;
 	
 	&::before {
 		// box model
 		border: 2px solid $wine;
-		margin-left: 1em;
-		margin-bottom: 0.5em;
+		margin-right: 1ch;
+		//margin-bottom: 0.5em;
 		width: 2em;
 		// layout
-		float: right;
+		flex: 0 0 2em;
 		// typography
 	  font-size: 1.202rem;  //19.232px  Step 2
 	  font-weight:bold;
