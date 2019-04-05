@@ -1,18 +1,43 @@
+#header {
+	// box model
+	margin: 0.5em 0;
+	// typography
+	text-align: center;
+	
+	@include breakpoint($starlord) {
+		margin-bottom: 1em;
+	}
+}
+
+#header::before {
+	// box model
+	max-width: 16ch;
+	// display
+	display: block;
+	// misc
+	content: url("../images/Evergreen_SEC_RGB.svg");
+	
+	@include breakpoint($gamora) {
+		content: url("../images/Evergreen_PRI_RGB.svg");
+	}
+}
+
 #company-name {
 	// box model
-	margin: 0.5em auto;
+	/*margin: 0.5em auto;
 	width: 100%;
-	max-width: 16ch;
+	max-width: 16ch;*/
 	// layout
-	display: block;
+	display: none;
 	overflow: hidden;
+	visibility: hidden;
 	// typography
 	color: transparent;
 	line-height: 0;
-	text-align: center;
+	//text-align: center;
 	white-space: nowrap;
 		
-	@include breakpoint($lil-groot) {
+	/*@include breakpoint($lil-groot) {
 		width: 50%;
 	}
 	
@@ -20,16 +45,16 @@
 		margin-bottom: 1em;
 	}
 	
-	&::before{
+	&::before {
 		// display
 		display: block;
 		// misc
-		content: url("../images/Evergreen_SEC_CMYK.svg");
+		content: url("../images/Evergreen_SEC_RGB.svg");
 		
 		@include breakpoint($gamora) {
-			content: url("../images/Evergreen_PRI_CMYK.svg");
+			content: url("../images/Evergreen_PRI_RGB.svg");
 		}
-	}
+	}*/
 }
 
 #app-name {  // “Central Authentication Service (CAS)”
