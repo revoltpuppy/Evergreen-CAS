@@ -59,14 +59,19 @@ input[type="reset"]:active{
  */
 input.btn-submit{
 	// box model
-	border-color: $evergreen-old-style;
+	border-color: $forest;
 	padding: 1em;
 	width: 100%;
 	// typography
 	color: white;
 	text-shadow: 0 -1px 0 $shadow;
 	// decoration
-	background-image: linear-gradient(mix($morning-light, $evergreen-neue, 40%), $evergreen-neue);
+	background-image: linear-gradient(
+		mix($rubber-geoducky-light, $forest, 33%),
+		$forest 33%,
+		$forest 67%,
+		mix($oregon-grape-dark, $forest, 33%)
+	);
 }
 
 input.btn-submit:hover{
