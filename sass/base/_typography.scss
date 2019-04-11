@@ -98,7 +98,6 @@ h2 {
 	// box model
   margin-top: 1.55990016638935em;  // 30/19.232
   // typography
-  color:#666;
   font-size: 1.202rem;  // 19.232px  Step 2
   font-weight:bold;
   line-height: 1.55990016638935;  // 30/19.232
@@ -118,13 +117,13 @@ h2 {
     font-size: 1.945rem;  // 31.12px  Step 4
     line-height: 0.96401028277635;  // 30/31.12
   }
+	color: $stone;
 }
 
 h3 {
 	// box model
 	margin-top: 1.32352941176471em;  //22.5/17
 	// typography
-	color:#333;
 	font-size: 1.063rem;  //17px  Step 1
 	font-weight: normal;
 	line-height: 1.32352941176471;  //22.5/17
@@ -174,14 +173,13 @@ h6 {
 }
 
 h5 {
-  color: #666;
   font-weight: bold;
 }
 
 h6 {
-	color: #666;
   font-style: italic;
   font-weight: normal;
+	color: $stone;
 }
 
 h1,
@@ -251,25 +249,24 @@ dd > blockquote:first-child > p:first-child {
  */
 a {
 	// typography
-	color: $blueberry-susan;
+	color: $forest;
 	font-weight: bold;
-	text-decoration-color: mix(white, $blueberry-susan, 75);
+	text-decoration-color: mix(white, $forest, 75);
 	text-decoration-skip: ink;
 	
 	&:visited {
-		text-decoration-color: mix(white, $wine, 75);
-		color: $wine;
-  }
+		color: $blush-dark;
+		text-decoration-color: mix(white, $blush-dark, 75);
+	}
 
 	&:hover {
-		text-decoration-color: $sky-blue;
-		color: $sky-blue;
+		color: $sky-medium;
+		text-decoration-color: $sky-medium;
 	}
 
 	&:focus,
 	&:active {
-		outline-width: 0;
-		background-color: transparentize($blueberry-susan, .9);
+		background-color: transparentize($oregon-grape, .9);
 	}
 }
 
@@ -284,11 +281,11 @@ a {
 		&,
 		&:visited,
 		&:hover {
-		    color: #fff;
 		    text-shadow: 0 1px 3px hsl(275, 33%, 11%);
 		    
 		    @include breakpoint($drax){
 		    	text-shadow:
+				color: $cloud;
 						-1px 1px $shadow,
 						-1px 2px $shadow,
 						-1px 3px $shadow,
@@ -353,5 +350,5 @@ hr {
 	height: 5px;
 	margin: 2.8125rem 0;  //45/16
 	// decoration
-	background-color: $evergreen-neue;
+	background-color: $moss;
 }
