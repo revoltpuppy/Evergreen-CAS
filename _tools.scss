@@ -6,8 +6,67 @@
  * @section sass-constants
  */
  
+
 /**
  * Colors
+ */
+
+/* Core Palette */
+$forest: hsl(120, 46%, 28%);
+$stone: hsl(205, 10, 49);
+$cloud: hsl(0, 0%, 100%);
+
+/* Greenery Palette */
+$moss-light: hsl(88, 48%, 80%);
+$moss: hsl(91, 44%, 41%);
+$forest-dark: hsl(156, 100%, 14%);
+
+/* Vibrant Palette */
+$salmonberry-light: hsl(14, 68%, 84%);
+$salmonberry: hsl(21, 71%, 58%);
+$salmonberry-medium: hsl(18, 73%, 47%);
+$salmonberry-dark: hsl(21, 100%, 22%);
+
+$rubber-geoducky-light: hsl(48, 87%, 85%);
+$rubber-geoducky: hsl(54, 73%, 57%);
+$rubber-geoducky-medium: hsl(42, 98%, 54%);
+$rubber-geoducky-dark: hsl(38, 61%, 44%);
+
+$sky-light: hsl(209, 65%, 86%);
+$sky: hsl(204, 69%, 46%);
+$sky-medium: hsl(210, 100%, 30%);
+$sky-dark: hsl(206, 100%, 19%);
+
+$oregon-grape-light: hsl(342, 21%, 88%);
+$oregon-grape: hsl(311, 28%, 50%);
+$oregon-grape-medium: hsl(309, 39%, 27%);
+$oregon-grape-dark: hsl(268, 43%, 24%);
+
+$blush-light: hsl(351, 84%, 93%);
+$blush: hsl(351, 84%, 67%);
+$blush-medium: hsl(348, 58%, 48%);
+$blush-dark: hsl(337, 80%, 23%);
+
+$stone-light: hsl(165, 5%, 86%);
+$stone-medium: hsl(207, 11%, 40%);
+$stone-dark: hsl(240, 100%, 4%);
+
+/**
+ * Composit Colors
+ *
+ * Prebuilt colors based on our existing color palettes.
+ */
+$highlight: transparentize($rubber-geoducky-light, 0.5);
+$drop-shadow: transparentize($oregon-grape-dark, 0.75);
+
+$ui-border: $stone-light;
+$ui-border--focused: $stone;
+$ui-background: $cloud;
+
+/**
+ * Deprecated Colors
+ *
+ * Colors from the previous brand color palette. Avoid using!
  */
 $morning-light: #fdf4b6;
 $sky-blue: #0086ee;

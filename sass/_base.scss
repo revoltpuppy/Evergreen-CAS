@@ -32,6 +32,8 @@ body{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	// typography
+	color: $stone-dark;
 	// decoration
 	background-color: white;
 }
@@ -53,7 +55,7 @@ svg{
  */
 input{
 	// box model
-	border: 1px solid #bbcfd7;
+	border: 1px solid $ui-border;
 	height: 1.719rem;
 	margin-bottom: 1.262201279030629em; // 15/11.884
 	padding: 0 .5em;
@@ -71,7 +73,7 @@ input{
 
 select{
 	// box model
-	border: 1px solid $sky-blue;
+	border: 1px solid $sky-medium;
 	@include margin-default;
 	padding: 0.30357142857143em .5em;  // 4.25/14 So, (4.25 * 2) + 14 = 22.5
 	// typography

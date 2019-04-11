@@ -29,16 +29,16 @@
 
 #login{
 	// box model
-	border-top: 1em solid $evergreen-neue;
+	border-top: 1em solid $forest;
 	margin-bottom: 0.46875rem;  //7.5px
 	// layout
 	overflow: hidden;
 	
 	@include breakpoint($rocket) {
 		// box model
-		border-right: 1px solid mix(white, $blueberry-susan, 75%);
-		border-bottom: 1px solid mix(white, $blueberry-susan, 75%);
-		border-left: 1px solid mix(white, $blueberry-susan, 75%);
+		border-right: 1px solid $ui-border;
+		border-bottom: 1px solid $ui-border;
+		border-left: 1px solid $ui-border;
 		margin: 0 auto;
 		width: calc(100% - 4ch);
 		max-width: 50ch;
