@@ -11,13 +11,14 @@
 
 #header::before {
 	// box model
+	margin: 0 auto;
 	max-width: 16ch;
 	// display
 	display: block;
 	// misc
 	content: url("../images/Evergreen_SEC_RGB.svg");
 	
-	@include breakpoint($gamora) {
+	@include breakpoint($starlord) {
 		content: url("../images/Evergreen_PRI_RGB.svg");
 	}
 }
