@@ -228,9 +228,9 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	// layout
 	display: block;
 	
-	/*&:first-child {
+	&:first-child {
 		margin-right: 2ch;
-	}*/
+	}
 }
 
 #list-languages {
