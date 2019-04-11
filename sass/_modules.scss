@@ -134,19 +134,19 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 
 .errors {
 	// box model
-	border: 1px solid $wine;
+	border: 1px solid $blush-dark;
 	// layout
 	align-items: flex-start;
 	display: flex;
 	// typography
-	color: $wine;
+	color: $blush-dark;
 	// decoration
 	background-color: $highlight !important;
 	border-radius: 6px;
 	
 	&::before {
 		// box model
-		border: 2px solid $wine;
+		border: 2px solid $blush-dark;
 		margin-right: 1ch;
 		//margin-bottom: 0.5em;
 		width: 2em;
@@ -167,8 +167,8 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 .success,
 .info {
 	// decoration
-	background-color: transparentize(mix(white, $sky-blue, 80%), .05) !important;
-	background-image: url("/cas/images/texture-1.png");
+	background-color: transparentize(mix(white, $sky-medium, 80%), .05) !important;
+	//background-image: url("/cas/images/texture-1.png");
 	
 	@include breakpoint($rocket) {
 		border-radius: 6px;
@@ -194,7 +194,7 @@ input.btn-reset{  // Hide the “Clear” button. It’s just better this way.
 	// box model
 	margin-top: 0;
 	// typography
-	color: mix($black, $sky-blue, 40%);
+	color: $sky-dark;
 	font-weight: bold;
 }
 	
