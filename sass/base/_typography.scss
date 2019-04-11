@@ -29,20 +29,20 @@ body {
 body,
 input,
 button {
-	 -webkit-font-smoothing: antialiased;  // Reduce text chubbiness in Safari, Chrome
-	-moz-osx-font-smoothing: grayscale;  // Reduce text chubbiness in Firefox
+	 -webkit-font-smoothing: antialiased;	// Reduce text chubbiness in Safari, Chrome
+	-moz-osx-font-smoothing: grayscale;	// Reduce text chubbiness in Firefox
 }
 
 body,
 .base {
-	@include base-type;  // Step 0.5
+	@include base-type;	// Step 0.5
 	
 	@include breakpoint($gamora){
-		@include base-type-lg;  // Step 1
+		@include base-type-lg;	// Step 1
 	}
 	
 	@include breakpoint($groot){
-		@include base-type-xl;  // Step 2
+		@include base-type-xl;	// Step 2
 	}
 }
 
@@ -52,14 +52,14 @@ ol,
 dl,
 blockquote,
 figure {
-	margin: 0.535714285714286em 0 1.071428571428571em 0;  //22.5/14/3 15/14  So, 22.5 + 7.5 + 15 = 45
+	margin: 0.535714285714286em 0 1.071428571428571em 0;	 //22.5/14/3 15/14	So, 22.5 + 7.5 + 15 = 45
 	
 	@include breakpoint($gamora){
-		margin: 0.441176470588235em 0 0.882352941176471em 0;  //7.5/17/3  15/17  So, 22.5 + 7.5 + 15 = 45
+		margin: 0.441176470588235em 0 0.882352941176471em 0;	//7.5/17/3	15/17	 So, 22.5 + 7.5 + 15 = 45
 	}
 	
 	@include breakpoint($groot){
-		margin: 0.51996672212978em 0 1.03993344425957em 0;  //10/19.232 20/19.232  So 30 + 10 + 20 = 60
+		margin: 0.51996672212978em 0 1.03993344425957em 0;	//10/19.232 20/19.232	 So 30 + 10 + 20 = 60
 	}
 }
 
@@ -70,78 +70,78 @@ figure {
  */
 h1 {
 	// box model
-  margin-top: 1.55990016638935em;  //30/19.232
-  // typography
-  color:#666;
-  font-size: 1.202rem;  //19.232px  Step 2
-  font-weight:bold;
-  line-height: 1.55990016638935;  //30/19.232
-  
-  @include breakpoint($gamora) {
-  	// box model
-  	margin-top: 1.090750436300175em;  //30/27.504
-  	// typography
-    font-size: 1.719rem;  //27.504px  Step 3
-    line-height: 1.090750436300175; //30/27.504
-  }
-  
-  @include breakpoint($groot) {
-  	// box model
-  	margin-top: 0.96401028277635em;  //30/31.12
-  	// typography
-    font-size: 1.945rem;  //31.12px  Step 4
-    line-height: 0.96401028277635;  //30/31.12
-  }
+	margin-top: 1.55990016638935em;	 //30/19.232
+	// typography
+	color: $stone;
+	font-size: 1.202rem;	//19.232px	Step 2
+	font-weight:bold;
+	line-height: 1.55990016638935;	//30/19.232
+	
+	@include breakpoint($gamora) {
+		// box model
+		margin-top: 1.090750436300175em;	 //30/27.504
+		// typography
+		font-size: 1.719rem;	//27.504px	Step 3
+		line-height: 1.090750436300175; //30/27.504
+	}
+	
+	@include breakpoint($groot) {
+		// box model
+		margin-top: 0.96401028277635em;	//30/31.12
+		// typography
+		font-size: 1.945rem;	//31.12px	 Step 4
+		line-height: 0.96401028277635;	//30/31.12
+	}
 }
 
 h2 {
 	// box model
-  margin-top: 1.55990016638935em;  // 30/19.232
-  // typography
-  font-size: 1.202rem;  // 19.232px  Step 2
-  font-weight:bold;
-  line-height: 1.55990016638935;  // 30/19.232
-  
-  @include breakpoint($gamora) {
-  	// box model
-  	margin-top: 1.090750436300175em;  // 30/27.504
-  	// typography
-    font-size: 1.719rem;  // 27.504px  Step 3
-    line-height: 1.090750436300175; // 30/27.504
-  }
-  
-  @include breakpoint($groot) {
-  	// box model
-  	margin-top: 0.96401028277635em;  // 30/31.12
-  	// typography
-    font-size: 1.945rem;  // 31.12px  Step 4
-    line-height: 0.96401028277635;  // 30/31.12
-  }
+	margin-top: 1.55990016638935em;	 // 30/19.232
+	// typography
 	color: $stone;
+	font-size: 1.202rem;	// 19.232px	 Step 2
+	font-weight: bold;
+	line-height: 1.55990016638935;	// 30/19.232
+	
+	@include breakpoint($gamora) {
+		// box model
+		margin-top: 1.090750436300175em;	 // 30/27.504
+		// typography
+		font-size: 1.719rem;	// 27.504px	 Step 3
+		line-height: 1.090750436300175; // 30/27.504
+	}
+	
+	@include breakpoint($groot) {
+		// box model
+		margin-top: 0.96401028277635em;	// 30/31.12
+		// typography
+		font-size: 1.945rem;	// 31.12px	Step 4
+		line-height: 0.96401028277635;	// 30/31.12
+	}
 }
 
 h3 {
 	// box model
-	margin-top: 1.32352941176471em;  //22.5/17
+	margin-top: 1.32352941176471em;	//22.5/17
 	// typography
-	font-size: 1.063rem;  //17px  Step 1
+	font-size: 1.063rem;	 //17px	 Step 1
 	font-weight: normal;
-	line-height: 1.32352941176471;  //22.5/17
-    
+	line-height: 1.32352941176471;	 //22.5/17
+		
 	@include breakpoint($gamora) {
 		// box model
-		margin-top: 1.176286072772898em;  //30/25.504
+		margin-top: 1.176286072772898em;	//30/25.504
 		// typography
-		font-size: 1.594rem;  //25.504px - otherwise appears optically taller than h2  Step 3(ish)
-		line-height: 1.176286072772898;  //30/25.504
+		font-size: 1.594rem;	//25.504px - otherwise appears optically taller than h2	 Step 3(ish)
+		line-height: 1.176286072772898;	 //30/25.504
 	}
-    
+		
 	@include breakpoint($groot) {
 		// box model
-		margin-top: 1.07142857142857em;  //30/28
+		margin-top: 1.07142857142857em;	 //30/28
 		// typography
-		font-size: 1.75rem;  //28px - otherwise appears optically taller than h2  Step 4(ish)
-		line-height: 1.07142857142857;  //30/28
+		font-size: 1.75rem;	 //28px - otherwise appears optically taller than h2	Step 4(ish)
+		line-height: 1.07142857142857;	//30/28
 	}
 }
 
@@ -150,36 +150,37 @@ h4,
 h5,
 h6 {
 	// box model
-  margin-top: 1.07142857142857em;  //15/14
-  // typography
-  font-size: 0.875rem;  //19.232px  Step .5
-  line-height: 1.60714285714286;  //22.5/14
-  
-  @include breakpoint($gamora){
-  	// box model
-  	margin-top: 1.46814133307233em;  //30/20.434
-  	// typography
-    font-size: 1.202rem;  //20.434px  Step 2
-    line-height: 1.46814133307233; //30/20.434
-  }
-  
-  @include breakpoint($groot){
-  	// box model
-    margin-top: 1.090750436300175em;  //30/27.504
-    // typography
-    font-size: 1.719rem;  //27.504px  Step 3
-    line-height: 1.090750436300175;  //30/27.504
-  }
+	margin-top: 1.07142857142857em;	 //15/14
+	// typography
+	font-size: 0.875rem;	//19.232px	Step .5
+	line-height: 1.60714285714286;	//22.5/14
+	
+	@include breakpoint($gamora){
+		// box model
+		margin-top: 1.46814133307233em;	 //30/20.434
+		// typography
+		font-size: 1.202rem;	//20.434px	Step 2
+		line-height: 1.46814133307233; //30/20.434
+	}
+	
+	@include breakpoint($groot){
+		// box model
+		margin-top: 1.090750436300175em;	//30/27.504
+		// typography
+		font-size: 1.719rem;	//27.504px	Step 3
+		line-height: 1.090750436300175;	 //30/27.504
+	}
 }
 
 h5 {
-  font-weight: bold;
+	color: $stone;
+	font-weight: bold;
 }
 
 h6 {
-  font-style: italic;
-  font-weight: normal;
 	color: $stone;
+	font-style: italic;
+	font-weight: normal;
 }
 
 h1,
@@ -192,8 +193,8 @@ h6 {
 	margin-bottom: 0.46875rem; //7.5px
 
 	@include breakpoint($groot){
-		margin-bottom: .625rem;  //10px
-	}  
+		margin-bottom: .625rem;	 //10px
+	}	
 }
 
 /**
@@ -209,7 +210,7 @@ ol {
 
 ul,
 dl {
-    padding: 0;
+	padding: 0;
 }
 
 ol ol {
@@ -218,20 +219,20 @@ ol ol {
 
 dt {
 	// box model
-	margin-top: 0.535714285714286em;  //22.5/14/3 - Same as p margin-top
+	margin-top: 0.535714285714286em;	 //22.5/14/3 - Same as p margin-top
 	// typography
 	font-weight: bold;
 	
 	@include breakpoint($groot) {
-		margin-top: 0.51996672212978em;  //10/19.232 - Same as p margin-top
+		margin-top: 0.51996672212978em;	 //10/19.232 - Same as p margin-top
 	}
 }
 dd {
-	margin-bottom: 1.071428571428571em;  //15/14 - Same as p margin-bottom
+	margin-bottom: 1.071428571428571em;	//15/14 - Same as p margin-bottom
 	margin-left: 0;
 	
 	@include breakpoint($groot) {
-		margin-bottom: 1.03993344425957em;  //20/19.232 - Same as p margin-bottom
+		margin-bottom: 1.03993344425957em;	//20/19.232 - Same as p margin-bottom
 	}
 }
 dd > p:first-child,
@@ -281,11 +282,11 @@ a {
 		&,
 		&:visited,
 		&:hover {
-		    text-shadow: 0 1px 3px hsl(275, 33%, 11%);
-		    
-		    @include breakpoint($drax){
-		    	text-shadow:
 				color: $cloud;
+				text-shadow: 0 1px 3px hsl(275, 33%, 11%);
+				
+				@include breakpoint($drax){
+					text-shadow:
 						-1px 1px $shadow,
 						-1px 2px $shadow,
 						-1px 3px $shadow,
@@ -293,7 +294,7 @@ a {
 						-1px 5px $shadow,
 						-1px 6px $shadow,
 						-1px 7px 0.5px $shadow
-		    }
+				}
 		}
 	}
 	
@@ -314,8 +315,8 @@ em {
 
 figcaption,
 small,
-//caption,  //table caption
-.details,  //deprecated
+//caption,	//table caption
+.details,	 //deprecated
 .caption {
 	@include small-type;
 	
@@ -348,7 +349,7 @@ hr {
 	// box model
 	border: 0;
 	height: 5px;
-	margin: 2.8125rem 0;  //45/16
+	margin: 2.8125rem 0;	 //45/16
 	// decoration
 	background-color: $moss;
 }
