@@ -63,13 +63,8 @@
 	@include breakpoint($rocket) {
 		// box model
 		margin: 0 auto;
-		max-width: 50ch;
+		max-width: 40ch;
 	}
-
-	/*@include breakpoint($gamora){
-		// box model
-		max-width: 50ch;
-	}*/
 }
 
 .sidebar-content {
@@ -78,6 +73,11 @@
 	@include breakpoint($rocket) {
 		// box model
 		padding: 0 6px;  // Accounts for 6px border-radius
+	}
+
+	@include breakpoint($drax) {
+		// box model
+		padding: 0;  // Border-radius doesn’t matter at this size
 	}
 }
 
